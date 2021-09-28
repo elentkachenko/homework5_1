@@ -45,7 +45,7 @@ public class Main {
                 "\"dataStoreLogFile\": \"/usr/local/tomcat/logs/datastore.log\",\n" +
                 "\"dataStoreInitConns\": 10,";
 
-        Pattern pattern = Pattern.compile("\\w+@[\\w.]+\\.\\w+");
+        Pattern pattern = Pattern.compile("\\w+@\\w+\\.\\w+");
         Matcher matcher = pattern.matcher(s);
         String result;
         while (matcher.find()) {
